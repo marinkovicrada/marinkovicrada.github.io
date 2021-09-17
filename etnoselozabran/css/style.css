@@ -1,0 +1,243 @@
+*{
+	margin:0px;
+	padding:0px;
+    box-sizing:border-box;
+}
+body{
+	font-family:'Neucha', cursive;
+	background-image:url('../img/camac.jpg');
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+
+.naslov h1{
+	text-align:center;
+	font-size:30px;
+}
+.naslov{
+	margin:30px;
+}
+#okvir{
+	width:1024px;
+	background-color:rgba(255,255,255,0.7);
+	margin:5px auto;
+	border-radius:5px;
+}
+main{
+	padding-top:80px;
+}
+#zaglavlje{
+	position:fixed;
+	border-radius:5px 5px 3px 3px;
+	width:1024px;
+	background-color:rgba(44,44,44,0.9);
+	display:flex;
+	justify-content:space-between;
+}
+
+#logo{
+	margin-top:7px;
+	margin-left:-10px;
+	position: relative;
+	animation-name: example;
+	animation-duration: 4s;
+}
+@keyframes example {
+    from{left:0px; top:-70px;}
+	to{left:0px; top:0px;}
+}	
+ul{
+	list-style-type:none;
+	margin:20px 0px;
+}
+
+li{
+	display:inline-block;
+	border-right: 2px solid rgba(255,255,255,0.5);
+	text-align:center;
+}
+a{
+	padding:25px;
+	text-decoration:none;
+	font-size:16px;
+	color:#ffffff;
+}
+.drusMreze {
+	padding:10px;
+}
+.lista{
+	display:none;
+	position:absolute;
+	min-width:200px;
+	margin-top:20px;
+	margin-left:-30px;
+}
+.slike{
+	margin-top:30px;
+}
+.lista a{
+	text-decoration:none;
+	display:block;
+	background-color:rgba(44,44,44,0.9);
+	padding:10px;
+}
+.dropdown:hover .lista{
+	display:block;
+}
+.lastChild{
+	border-right:none;
+}
+.galerija{
+	display:flex; 
+    justify-content:space-around; 
+}
+.artikl{
+	margin:10px;
+}
+.trim{
+	margin:90px 5px 30px 10px;
+	
+}
+figcaption {
+	padding:7px 0px;
+	text-align:center;
+}
+.galerija .artikl:nth-child(odd):hover {
+	transform: rotate(-5deg);
+}
+.galerija .artikl:nth-child(even):hover{ 
+	transform: rotate(5deg);
+}
+h2{
+	text-align:center;
+	color:#2c2c2c;
+	padding-top:20px;
+	margin:0px 20px;
+}
+p{
+	margin: 20px;
+	font-size:20px;
+	padding:10px;
+	text-align:justify;
+}
+a:hover{
+	color:#ccff99;
+}
+.sredina{
+	margin-top:15px;
+	border-radius:4px;
+	background-color:rgba(77, 153, 0,0.2);
+}
+.staza{
+	display:flex; 
+    justify-content:space-around; 
+}
+.forma{
+	max-width:600px;
+	margin:10px auto;
+	padding:16px;
+	background-color:#F7F7F7;
+}
+.forma h2{
+	background-color:rgba(77, 153, 0,0.5);
+	padding:20px 0px;
+	font-size:140%;
+	font-weight:300px;
+	text-align:center;
+	color:#fff;
+	margin:-16px -16px 16px -16px;
+}
+.forma input[type="text"],
+.forma input[type="email"],
+.forma textarea {
+	outline: none;
+	box-sizing: border-box;
+	width: 100%;
+	background: #fff;
+	margin-bottom: 4px;
+	border: 1px solid #ccc;
+	padding: 20px;
+	color: #555;
+}
+.forma input[type="submit"]{
+	width: 100%;
+	padding:3%;
+	background-color:rgba(77, 153, 0,0.5);
+	color:#fff;
+}
+.forma input[type="submit"]:hover{
+	box-shadow:0px 6px 20px 0px rgba(0, 0, 0, 0.5);
+}
+footer{
+	width: 100%;
+	border-radius:3px 3px 5px 5px;
+	background-color:rgba(0,0,0,0.9);
+	display:flex;
+	justify-content:center;
+}
+footer p{
+	padding:20px 0px;
+	color:rgb(240,240,240);
+}
+.link{
+    text-decoration:none;
+	font-size:20px;
+	color:#ffffff;
+	padding:0px;
+}
+{
+	text-decoration:none;
+	font-size:20px;
+	color:#ffffff;
+}
+.kontakt{
+	margin-top:110px;
+}
+.kontakt p{
+	border: 1px solid rgb(200,200,200);
+	box-shadow:0px 6px 20px 0px rgba(0, 0, 0, 0.19);
+	font-size: 22px;
+	max-width: 400px;
+}
+.animacija{
+	animation-name:anim;
+	animation-duration:10s;
+}
+@keyframes anim {
+    from {color:rgba(77, 153, 0,0.2);}
+    to {color:#2c2c2c;}
+}
+.slika{
+	animation-name:uvecanje;
+	animation-duration:4s;
+}
+@keyframes uvecanje {
+    from {width:1px; height:1px;}
+    to {width:670px; height:446px;}
+}
+span{
+	position:relative;
+	animation-name:bicikl;
+	animation-duration:4s;
+	animation-timing-function: ease-out;
+}
+@keyframes bicikl {
+    from {left:-700px;}
+    to {left:0px;}
+}
+.video{
+	margin-bottom:20px;
+}
+.login{
+	display:flex;
+	justify-content:flex-end;
+	margin:5px;
+}
+.login input[type="text"], input[type="password"] {
+	width:110px;
+	margin-right:10px;
+}
+.login input[type="submit"]{
+	background-color:#ffffff;
+}
+

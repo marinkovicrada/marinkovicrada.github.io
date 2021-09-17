@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<rss version="2.0">
+	<channel>
+		<item>
+			<title>Etno selo Zabran</title> 
+			<description>Pogledajte nasu ponudu na sledecem linku</description> 
+			<link>http://sajtovistudenata.ict.edu.rs/30_18/zabranskaBajka.html</link> 
+		</item>
+		
+		<item>
+		<title>Kontaktirajte nas</title> 
+		<description>Pogledajte gde se nalazimo i ostavite Vase utiske o Nama</description> 
+		<link>http://sajtovistudenata.ict.edu.rs/30_18/kontakt.html</link> 
+		</item>
+	</channel>
+</rss>

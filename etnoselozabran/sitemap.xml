@@ -1,0 +1,192 @@
+
+<body data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0">
+ <div id="menu">
+    <nav id="menu1">
+        <ul>
+            <li>
+                <a href="index.html">HOME</a>
+            </li>
+            <li>
+                <a href="#1">SKILLS</a>
+            </li>
+            <li>
+                <a href="#2">PROJECT</a>
+            </li>
+            <li>
+                <a href="#3">EDUCATION</a>
+            </li>
+            <li>
+                <a href="#4">ABOUT</a>
+            </li>
+            <li>
+                <a href="#5">CONTACT</a>
+            </li>
+        </ul>
+    </nav>
+ </div>
+        <header id="header">
+               <div id="text">
+                       <h1> WELCOME ! I AM DIJANA RADOVANOVIC FRONT-END DEVELOPER FROM BELGRADE.</h1>
+               </div> 
+
+        </header>
+            <div id="wrapper">
+                 <a name="1"></a>
+                    <div class="title aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease" data-aos-duration="1000">
+                                   <h1>SKILLS</h1>
+                                       <h2>What I can do </h2>
+                    </div>
+                     <div id="second">
+                          <div class="first aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease" data-aos-duration="2000">
+                                <i class="far fa-file-code html"></i>
+                                        <h2>HTML</h2>
+                                           <p><span class="color">Hypertext Markup Language</span>, a standardized system for tagging text 
+                                                   files to achieve font, colour, graphic, and hyperlink effects World Wide Web pages.</p>
+                            </div>
+                            <div class="first aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease" data-aos-duration="2000">
+                                    <i class="fas fa-laptop-code css"></i>
+                                                   <h2>CSS</h2>
+                                                  <p><span class="color">CSS</span> stands for Cascading Style Sheets; CSS describes 
+                                         how HTML elements are to be displayed on screen, paper or in other media; CSS saves a lot of work.</p>
+                            </div>
+                            <div class="first aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease" data-aos-duration="2000">
+                                    <i class="fab fa-sass sass"></i>
+                                                  <h2>SASS</h2>
+                                                   <p><span class="color">Sass</span> is completely compatible with all versions of CSS. 
+                                           We take this compatibility seriously,so that you can seamlessly use any available CSS libraries.</p>
+                            </div>
+                            <div class="first aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease" data-aos-duration="2000"> 
+                                    <i class="fab fa-less less"></i>
+                                                 <h2>LESS</h2>
+                                                    <p><span class="color">Less</span> is a dynamic preprocessor style sheet language
+                                          that can be compiled into Cascading Style Sheets (CSS) and run on the client side or server side.</p>
+    
+                            </div>
+                            <div class="first aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease" data-aos-duration="2000">
+                                    <i class="fa fa-mobile-alt rd"></i>
+                                                 <h2>RESPONSIVE DESIGN</h2>
+                                                    <p>Websites must be fully <span class="color">responsive</span>, look equally good on 
+                                                                                    the smallest smartphone and the largest desktop screen.</p>
+                            </div>
+                            <div class="first aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease" data-aos-duration="2000"> 
+                                    <i class="fas fa-chart-line so"></i><br>
+                                                 <h2>SEO OPTIMIZATION</h2>
+                                                  <p><span class="color">SEO</span>(Search Engine Optimization) isn't just about building 
+                                                        search engine-friendly websites. It's about making your site better for people too.</p>
+                            </div>
+                     </div>
+             </div>
+            <div id="wrapper2">
+                      <a name="2"> </a>
+                         <div class="line"></div>
+                                 <div class="title aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-in-out" data-aos-duration="1000">
+                                       <h1>MY PROJECT</h1>
+                                           <h2>List of my project </h2>
+                                </div>
+                        <div id="deny">
+                                <div class="description1 aos-init aos-animate" data-aos="fade-right" data-aos-easing="fast" data-aos-duration="2000">
+                         <a href="https://rdijana.github.io/dijana/index.html" target="_blank">  <img src="img/deny.png" alt="slikasajta"></a>
+                                </div>
+                               <div class="description1 aos-init aos-animate" data-aos="fade-right" data-aos-easing="fast" data-aos-duration="2000">
+                                               <h2>"Dentist ordination Deny"</h2>
+                                                   <p>Statical site</p>
+                                                     <p>Non responsiv</p>
+                                                        <p>HTML,CSS,Adobe Photoshop</p>
+                                                           <p>2018.year</p>
+                                                             <p>Worked like school project</p>
+                               </div>
+                        </div>
+            </div>
+            <div id="wrapper3">
+                      <a name="3"></a>
+                        <div class="line"></div>
+                            <div class="title aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-in-out" data-aos-duration="1000">
+                                                   <h1>EDUCATION</h1>
+                                                       <h2>My education</h2>
+                           </div>
+                             <div id="blockedu">
+                                   <div class="education aos-init aos-animate" data-aos="fade-right" data-aos-easing="fast" data-aos-duration="2000">
+                                        <i class="fas fa-book-open edu"></i>
+                                               <h2>Education</h2>
+                                                   <p>ICT College</p>
+                                                      <p>Course: Internet Technologies</p>
+                                                         <p>Adress:Zdravka Celara, Belgrade</p>      
+                                    </div>
+                                    <div class="education aos-init aos-animate" data-aos="fade-right" data-aos-easing="fast" data-aos-duration="2000">
+                                        <i class="fas fa-graduation-cap edu"></i>
+                                               <h2>Certificate</h2>
+                                                   <p>Certificate of English lenguage</p>
+                                                      <p>ST. Nicolas School,Vojvode Stepe 78,Belgrade</p>
+                                    </div>
+                                    <div class="education aos-init aos-animate" data-aos="fade-right" data-aos-easing="fast" data-aos-duration="2000">
+                                        <i class="fas fa-language edu"></i>
+                                                    <h2>Lenguages</h2>
+                                                        <p>Native language: Serbian
+                                                           </p><p>Second: English</p>
+                                                             <p>Third:Deutch</p>
+                                    </div>
+                             </div>
+            </div>
+            <div id="wrapper4">
+                          <a name="4"></a>
+                                <div class="line"></div>
+                                    <div class="title aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-in-out" data-aos-duration="1000">
+                                                         <h1>ABOUT ME</h1>
+                                                            <h2>A few words about me </h2>
+                                    </div>
+                                       <div id="aboutme">
+                                            <div class="info aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-in-out" data-aos-duration="1000">
+                                                     <p>Hey! I am <span class="color">Dijana Radovanovic</span>, a front end web developer.
+                                               I am 20 years old.I live in Belgrade,Serbia.You can contac me try email <a href="http://gmail.com" target="_blank">dijanar@gmail.com</a>.<br><br>
+                                                  One of the most important stages and often rather time consuming tasks of building a website
+                                                    is a good strategy.I'm dedicated to creating clean, modern and user-friendly web sites.</p>
+                                             </div>
+                                    <div class="info aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-in-out" data-aos-duration="1000">
+                                             <img src="img/author.jpg" alt="author">
+                                    </div>
+                                       </div>
+            </div>
+            <div id="wrapper5">
+                        <a name="5"></a>
+                                  <div class="line"></div>
+                                      <div class="title aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-in-out" data-aos-duration="1000">
+                                                    <h1>CONTACT</h1>
+                                                       <h2>If you wish to hire me </h2>
+                                     </div>
+                                          <div id="contactme">
+                                                   <div id="contactmecenter" data-aos="zoom-in-up" class="aos-init aos-animate">
+                                        <form action="#" method="get">
+                                            <input type="text" id="tbName" name="tbName" placeholder="Your name" maxlength="15">
+                                            <input type="text" id="tbSName" name="tbSName" placeholder="Your surname" maxlength="20">
+                                            <input type="tel" id="tbTel" name="tbTel" placeholder="Your number" maxlength="20">
+                                            <textarea name="message" id="tbMessage" placeholder="Your message"></textarea>
+                                            <input type="email" id="tbEmail" name="tbEmail" placeholder="Your e-mail" maxlength="20">
+                                            <button type="submit" class="button"><i class="fas fa-paper-plane"></i></button>
+
+                                        </form>
+                                                   </div>
+                                        </div>
+            </div>
+            <footer id="footer">
+                        <div id="copy">
+                                    <p><a href="index.html">©Portfolio Dijana Radovanovic</a> </p>
+                        </div>
+                        <nav id="network">
+                                    <ul>
+                                            <li><a href="http://facebook.com" target="_blank"><i class="fab fa-facebook-square"></i></a></li>
+                                            <li><a href="http://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                                            <li><a href="css/style.css" target="_blank"><i class="fas fa-laptop-code"></i></a></li>
+                                            <li><a href="naziv.xml" target="_blank"><i class="fas fa-rss-square"></i></a></li>
+                                            <li><a href="mapa.xml" target="_blank"><i class="fas fa-sitemap"></i></a></li>
+                                            <li><a href="css/style.scss" target="_blank"><i class="fab fa-sass"></i></a></li>
+                                            <li><a href="css/query.css" target="_blank"> <i class="fa fa-mobile-alt"></i></a></li>
+                                    </ul> 
+                         </nav>
+            </footer>
+                      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+                        <script>
+                          AOS.init();
+                        </script>
+
+
+</body>
