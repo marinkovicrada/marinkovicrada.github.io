@@ -1,0 +1,722 @@
+$crna:#000;
+$bela:#fff;
+$tamno_siva:#a6a6a6;
+@mixin crtica {
+    content: " ";
+    clear: left;
+    display: block;
+    margin: 20px auto 20px auto;
+    border-bottom: 1px solid $tamno_siva;
+    width: 120px;
+}
+@mixin trakica {
+    .ribbon {
+        position: absolute;
+        right: -5px;
+        top: -5px;
+        overflow: hidden;
+        width: 75px;
+        height: 75px;
+        text-align: right; }
+    .ribbon span {
+          background-color: #197d26;
+          color: #ffffff !important;
+          font-size: 10px;
+          font-weight: bold;
+          text-transform: uppercase;
+          text-align: center;
+          line-height: 20px;
+          letter-spacing: 0.2em;
+          transform: rotate(45deg);
+          width: 100px;
+          display: block;
+          position: absolute;
+          top: 19px;
+          right: -21px; }
+        .ribbon span::before {
+            content: "";
+            position: absolute;
+            left: 0px;
+            top: 100%;
+            z-index: -1;
+            border-left: 3px solid #197d26;
+            border-right: 3px solid transparent;
+            border-bottom: 3px solid transparent;
+            border-top: 3px solid #197d26; }
+        .ribbon span::after {
+            content: "";
+            position: absolute;
+            right: 0px;
+            top: 100%;
+            z-index: -1;
+            border-left: 3px solid transparent;
+            border-right: 3px solid #197d26;
+            border-bottom: 3px solid transparent;
+            border-top: 3px solid #197d26; } 
+}
+@font-face{
+    font-family:"moj";
+    src: url("Poppins-Regular.ttf")    
+}
+@font-face{
+    font-family:"citat";
+    src: url("ReenieBeanie-Regular.ttf")    
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box; 
+}
+.boja{
+    background-color: $bela;
+}
+.crvena{
+    border: 1px solid red !important;
+}
+.crna{
+    color:$crna !important;
+}
+body{
+    font-family: 'moj';
+    #okvir{
+        width: 100%; 
+        margin: 0px auto;    
+        .cistac{
+            clear: both;
+        }
+        header{
+            position: fixed;
+            width:100%;
+            z-index: 1;
+            #logo{
+                float:left;
+                color:$bela;
+                padding-left: 5px;
+            }
+            #meni{
+                float:right;
+                #btn{
+                    display: none;
+                }
+                ul{
+                list-style-type: none;
+                    li{
+                        display: inline-block;
+                        padding:15px 30px;   
+                        a{
+                            display: block;
+                            color:$crna;
+                            text-decoration: none;
+                            letter-spacing: .15rem; 
+                            &:hover{
+                                color:#197d26;
+                            }  
+                        }
+                        ul{ 
+                            display: none;
+                            position: absolute;
+
+                            li{
+                                display: block;
+                                padding:10px 0px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        #prvi{
+            width:100%;
+            h1{
+                letter-spacing: .25rem;
+                padding: 15px;
+                margin-top: 20px;
+                text-align: center;
+            }
+            a{
+                display: flex;
+                justify-content: center;
+                .animacija{
+                    position: relative;
+                    animation: goredole 2s infinite;
+                        font-size: 30px;
+                }               
+                @keyframes goredole {
+                    0% {
+                              transform: translate(0, 0); }
+                    50% {
+                              transform: translate(0,10px); }
+                    100% {
+                              transform: translate(0, 0); } 
+                }
+            }
+            #ponuda{
+                display: flex;
+                justify-content: space-around;
+                padding:15px;
+                width:100%;
+                .box{
+                    background-color: $bela;
+                    width:50%;
+                    margin:0px 20px;
+                    .slika{
+                    display: flex;
+                    justify-content: center;
+                        img{
+                            max-width: 100%;
+                        }
+                }
+                    .content{
+                        text-align: justify;
+                        p{
+                            padding:0px 50px;
+                            color: $tamno_siva;
+                        }
+                        .header_box{
+                            text-align: center;
+                            h2{
+                                padding-bottom: 15px;
+                            }
+                            p{
+                                padding-top:10px;
+                                color:$tamno_siva;
+                                letter-spacing: 2px;
+                            }
+                            p::after{
+                                @include crtica();
+                            }
+                        }
+                        a{
+                            text-decoration: none;
+                            color: $crna;
+                            display: flex;
+                            justify-content: center;
+                            padding: 20px;
+                        }
+                    }
+                }
+            }
+        }    
+        #drugi{
+            background-image: url("../img/cover.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            height: 300px;
+            width:100%;
+            #slikaFix{
+                p{
+                    margin-right: 20px;
+                    font-size: 30px;
+                    font-family:'citat';
+                    color: $bela;
+                    text-align: center;
+                    &:first-child{
+                        &::after {
+                            @include crtica();
+                        }
+                    }
+                    &:last-child{
+                        text-align: center;
+                    }
+                }    
+            }
+        }
+        .naslov{
+            text-align: center;
+            letter-spacing: .25rem;
+            margin-top: 50px;
+        }
+        #kaktusiDrzac{
+            display: flex;
+            margin: 0px auto;
+            flex-wrap: wrap;
+            width:90%;
+            justify-content: space-around;
+            .svi{
+                flex-basis:20%;
+                margin:35px 20px 0px 20px;
+                position: relative;
+                text-align: center;
+                box-shadow: 2px 2px 10px #c2c2c2;
+                @include trakica;
+                .slikaDiv{
+                    img{
+                        max-width: 100%;
+                    }
+                }
+                &:hover{
+                    box-shadow: 1px 12px 25px $tamno_siva;
+                    transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+                }
+
+            }
+        }
+        #sukulentiDrzac{
+                display: flex;
+                margin:0px auto;
+                flex-wrap: wrap;
+                width:90%;
+                justify-content: space-around;
+                .artikli{
+                    flex-basis:20%;
+                    margin:35px 20px;
+                    position: relative;
+                    text-align: center;
+                    box-shadow: 2px 2px 10px #c2c2c2;
+                    @include trakica;
+                    .slikaDiv{
+                        img{
+                            max-width: 100%;
+                        }
+                    } 
+                    &:hover{
+                        box-shadow: 1px 12px 25px $tamno_siva;
+                        transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+                    }
+                }
+            }
+        #treci{
+            width:100%;
+            #podnaslov{
+                text-align: center;
+                padding: 30px 0px;
+                h2{
+                    padding: 10px;
+                    letter-spacing: .25rem;
+                    &::after{
+                        @include crtica;
+                    }
+                }
+            }
+            #galerija{
+                #drzac{
+                    display: flex;
+                    justify-content: center;
+                }
+                #opis{
+                    p{
+                    text-align: center;
+                    font-size: 25px;
+                    padding-bottom: 30px;        
+                    // text-transform: uppercase;
+                    }
+                }
+                #dugmici{
+                    padding:10px;
+                    text-align: center;
+                    button{
+                        padding: 15px;
+                        border: none;
+                        background-color:#eee;
+                    }
+                    #next{
+                        left:900px;
+                    }
+                }
+            }
+        }
+        #cetvrti{
+            width:100%;
+            margin:30px 0px;
+            h2:first-child{
+                text-align: center;
+                text-transform: uppercase;
+                letter-spacing: .25rem;
+                padding:20px;
+            }
+            #sredina{
+                width:100%;
+                display: flex;
+                justify-content: space-around;
+                #divAdresa{
+                    width:50%;
+                    p{
+                        padding-top: 15px;
+                        padding-left: 170px;
+                    }
+                    h3{
+                        padding:5px 0px;
+                        text-align: center;
+                        &::after{
+                            @include crtica();
+                        }
+                    }
+                    figure{
+                        width:100%;
+                        display: flex;
+                        justify-content: center;
+                        padding-top: 30px;
+                        img{
+                            max-width: 100%;
+                        }
+                    }
+
+                }
+            #forma{
+                width:50%;
+                form{
+                    width:100%;            
+                    h3{
+                        padding:5px 0px;
+                        text-align: center;
+                        &::after{
+                            @include crtica();
+                        }
+                    }
+                    .drzac{
+                        width:80%;
+                        margin: 5px auto;
+                        label{
+                            font-size:20px;
+                            span{
+                                font-size: 16px;
+                            }     
+                        }
+                        input,#ddl,#grad{
+                            width:95%;	
+                            margin-bottom:5px;
+                            padding:5px;
+                            margin-top:10px;
+                            border:1px solid $crna;
+                            border-radius: 5px;
+                        }
+                        #radio{
+                            display: flex;
+                            justify-content: space-around;
+                            width:40%;
+                            padding-top: 5px;
+                        }
+                    }
+                    #dugmici{
+                        display: flex;	
+                        flex-wrap: wrap;
+                        justify-content:space-around;	
+                        align-items:center;
+                    .potvrda{
+                            padding: 5px;
+                            color:$bela;
+                            border:none;
+                            background-color:#197d26;
+                                width:20%;
+                                padding:5px;
+                                margin-right: 7px; 
+                                 margin-top:10px;
+                            &:hover{
+                                background-color:$bela;
+                                color:#197d26;
+                                font-weight: bold;
+                            }
+                        }
+                    } 
+                }
+            }
+        }}
+        #peti{
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+            background-color: #222;
+            border-top-left-radius: 9% 70%;
+            border-bottom-left-radius: 9% 70%;
+            margin:40px 0px 40px 40px;
+            #autorTekst{
+                padding: 50px;
+                color: $bela;
+                p{
+                    text-align: justify;
+                    padding:5px;
+                    &::after{
+                        @include crtica();
+                        width:100%;
+                    }
+                }
+                #drustveneMreze{
+                    display: flex;
+                    flex-direction: row;
+                    li{
+                    list-style-type: none;
+                    padding:10px;
+                    a{
+                        text-decoration: none;
+                        color:$bela;
+                        font-size: 1rem;
+                        &:hover{
+                            color:#197d26;
+                        }
+                    }
+                    }    
+                }
+            }
+            #autorSlika{
+                width:50%;
+                margin:0px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                img{
+                    max-width: 100%;
+                }
+            }            
+        }
+        #futer{
+            background-color: $bela;
+            width:100%;
+            p{
+                text-align: center;
+                &:after{
+                    @include crtica;
+                    width:70%;
+                }
+            }
+            #linkovi{
+                text-align: center;
+                a{
+                    text-decoration: none;
+                    color:$crna;
+                    &:hover{
+                        color:#197d26;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:992px){  
+    body{
+            #okvir{
+            width:100%;
+            margin:0px auto;
+            header{
+                width:100%;
+            }
+            #prvi{
+                width:100%;
+                h1{
+                    font-size: 20px;
+                }
+            }
+            #kaktusiDrzac{
+                width:95%;
+                .svi{
+                    flex-basis:20%;
+                    margin:20px 15px 0px 15px;         
+                }
+            }
+            #sukulentiDrzac{
+                width:95%;
+                .artikli{
+                    flex-basis:20%;
+                    margin:20px 15px;                  
+                }
+            }
+            #drugi{
+                width:100%;
+                #slikaFix{
+                    width:100%;
+                    p{
+                        font-size: 25px;
+                        margin-right: 0px;
+                        padding:0px 40px;
+                        text-align: center;
+                    }
+                }
+            }
+            #cetvrti{
+                #sredina{
+                    #divAdresa{
+                        p{
+                            padding-left: 80px;
+                        }
+                    }
+                }
+            }
+            #peti{
+                #autorTekst{
+                    padding:35px;
+                    p{
+                        font-size: 14px;
+                    }
+                }
+                #autorSlika{
+                    width:70%;
+                }
+            }    
+        }    
+    }
+}   
+@media screen and (max-width:768px){  
+    body{
+        #okvir{
+            width:100%;
+            margin:0px auto;
+            header{
+                #meni{
+                    margin:10px 20px;
+                     ul{
+                    display: none;
+                    text-align: center;
+                    li{
+                        display: flex;
+                        flex-direction: column;
+                        
+                    }
+                    #meni1{
+                        ul{
+                            position: static;
+                            ul{
+                                display: none;
+                            }
+                        }
+                    }
+                    }
+                    #btn{width:100%;	
+                        display:block;
+                        background: none;			
+                        border:none;	
+                        font-size:30px;
+                        i{
+                            color:$crna;
+                        }
+                    }
+                }
+            }
+            #prvi{
+                h1{
+                    font-size: 1rem;
+                }
+                #ponuda{
+                    display: flex;
+                    flex-direction: column;
+                    margin:0px auto;
+                    width:100%;
+                    .box{
+                        margin:0px;
+                        width:100%;
+                    }
+                }
+                a{
+                    .animacija{
+                    font-size: 20px;
+                }}
+            }
+            #drugi{
+                display: flex;
+                justify-content: center;
+                #slikaFix{
+                    p{
+                        font-size: 18px;
+                        padding:0px;
+                    }
+                }
+            }
+            #treci{
+                width:100%;
+                #galerija{
+                    width:100%;
+                    #drzac{
+                        width:100%;
+                        img{
+                            max-width: 100%;
+                        }
+                    }
+                }
+            }
+            #kaktusiDrzac{
+                width:90%;
+                .svi{
+                    flex-basis:40%;         
+                }
+            }
+            #sukulentiDrzac{
+                width:90%;
+                .artikli{
+                    flex-basis:40%;         
+                }
+            }
+            #cetvrti{
+                margin:0px;
+                #sredina{
+                    display: flex;
+                    flex-direction: column;
+                    #divAdresa{
+                        margin:20px auto;
+                        p{
+                            padding-left: 30px;
+                        }
+                    }
+                    #forma{
+                        margin:0px auto;
+                        width:80%;
+                    }
+                }
+            }
+            #peti{
+                width:100%;
+                display: flex;
+                flex-direction: column;
+                margin:30px auto;
+                border-top-left-radius: 0%;
+                border-bottom-left-radius: 0%;
+                #autorSlika{
+                    width:100%;
+                }
+            }
+            #futer{
+                p{
+                    font-size:14px;
+                }
+                #linkovi{
+                    a{
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:480px){  
+    body{
+        #okvir{
+            width: 100%;
+        #cetvrti{
+            #sredina{
+                #divAdresa{
+                    width:70%;
+                    p{
+                        padding-left:15px;
+                    }
+                figure{
+                    width:100%;
+                }
+                }
+            }
+        }  
+        #kaktusiDrzac{
+            width:90%;
+            .svi{
+                flex-basis:80%;         
+            }
+        }
+        #sukulentiDrzac{
+            width:90%;
+            .artikli{
+                flex-basis:80%;         
+            }
+        }
+
+        #futer{
+            p{
+                font-size:12px;
+            }
+            #linkovi{
+                a{
+                    font-size: 12px;
+                }
+            }
+        }
+    }}
+}

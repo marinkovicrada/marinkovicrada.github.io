@@ -1,0 +1,589 @@
+@font-face {
+  font-family: "moj";
+  src: url("Poppins-Regular.ttf"); }
+@font-face {
+  font-family: "citat";
+  src: url("ReenieBeanie-Regular.ttf"); }
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box; }
+
+.boja {
+  background-color: #fff; }
+
+.crvena {
+  border: 1px solid red !important; }
+
+.crna {
+  color: #000 !important; }
+
+body {
+  font-family: 'moj'; }
+  body #okvir {
+    width: 100%;
+    margin: 0px auto; }
+    body #okvir .cistac {
+      clear: both; }
+    body #okvir header {
+      position: fixed;
+      width: 100%;
+      z-index: 1; }
+      body #okvir header #logo {
+        float: left;
+        color: #fff;
+        padding-left: 5px; }
+      body #okvir header #meni {
+        float: right; }
+        body #okvir header #meni #btn {
+          display: none; }
+        body #okvir header #meni ul {
+          list-style-type: none; }
+          body #okvir header #meni ul li {
+            display: inline-block;
+            padding: 15px 30px; }
+            body #okvir header #meni ul li a {
+              display: block;
+              color: #000;
+              text-decoration: none;
+              letter-spacing: .15rem; }
+              body #okvir header #meni ul li a:hover {
+                color: #197d26; }
+            body #okvir header #meni ul li ul {
+              display: none;
+              position: absolute; }
+              body #okvir header #meni ul li ul li {
+                display: block;
+                padding: 10px 0px; }
+    body #okvir #prvi {
+      width: 100%; }
+      body #okvir #prvi h1 {
+        letter-spacing: .25rem;
+        padding: 15px;
+        margin-top: 20px;
+        text-align: center; }
+      body #okvir #prvi a {
+        display: flex;
+        justify-content: center; }
+        body #okvir #prvi a .animacija {
+          position: relative;
+          animation: goredole 2s infinite;
+          font-size: 30px; }
+@keyframes goredole {
+  0% {
+    transform: translate(0, 0); }
+  50% {
+    transform: translate(0, 10px); }
+  100% {
+    transform: translate(0, 0); } }
+      body #okvir #prvi #ponuda {
+        display: flex;
+        justify-content: space-around;
+        padding: 15px;
+        width: 100%; }
+        body #okvir #prvi #ponuda .box {
+          background-color: #fff;
+          width: 50%;
+          margin: 0px 20px; }
+          body #okvir #prvi #ponuda .box .slika {
+            display: flex;
+            justify-content: center; }
+            body #okvir #prvi #ponuda .box .slika img {
+              max-width: 100%; }
+          body #okvir #prvi #ponuda .box .content {
+            text-align: justify; }
+            body #okvir #prvi #ponuda .box .content p {
+              padding: 0px 50px;
+              color: #a6a6a6; }
+            body #okvir #prvi #ponuda .box .content .header_box {
+              text-align: center; }
+              body #okvir #prvi #ponuda .box .content .header_box h2 {
+                padding-bottom: 15px; }
+              body #okvir #prvi #ponuda .box .content .header_box p {
+                padding-top: 10px;
+                color: #a6a6a6;
+                letter-spacing: 2px; }
+              body #okvir #prvi #ponuda .box .content .header_box p::after {
+                content: " ";
+                clear: left;
+                display: block;
+                margin: 20px auto 20px auto;
+                border-bottom: 1px solid #a6a6a6;
+                width: 120px; }
+            body #okvir #prvi #ponuda .box .content a {
+              text-decoration: none;
+              color: #000;
+              display: flex;
+              justify-content: center;
+              padding: 20px; }
+    body #okvir #drugi {
+      background-image: url("../img/cover.jpg");
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      height: 300px;
+      width: 100%; }
+      body #okvir #drugi #slikaFix p {
+        margin-right: 20px;
+        font-size: 30px;
+        font-family: 'citat';
+        color: #fff;
+        text-align: center; }
+        body #okvir #drugi #slikaFix p:first-child::after {
+          content: " ";
+          clear: left;
+          display: block;
+          margin: 20px auto 20px auto;
+          border-bottom: 1px solid #a6a6a6;
+          width: 120px; }
+        body #okvir #drugi #slikaFix p:last-child {
+          text-align: center; }
+    body #okvir .naslov {
+      text-align: center;
+      letter-spacing: .25rem;
+      margin-top: 50px; }
+    body #okvir #kaktusiDrzac {
+      display: flex;
+      margin: 0px auto;
+      flex-wrap: wrap;
+      width: 90%;
+      justify-content: space-around; }
+      body #okvir #kaktusiDrzac .svi {
+        flex-basis: 20%;
+        margin: 35px 20px 0px 20px;
+        position: relative;
+        text-align: center;
+        box-shadow: 2px 2px 10px #c2c2c2; }
+        body #okvir #kaktusiDrzac .svi .ribbon {
+          position: absolute;
+          right: -5px;
+          top: -5px;
+          overflow: hidden;
+          width: 75px;
+          height: 75px;
+          text-align: right; }
+        body #okvir #kaktusiDrzac .svi .ribbon span {
+          background-color: #197d26;
+          color: #ffffff !important;
+          font-size: 10px;
+          font-weight: bold;
+          text-transform: uppercase;
+          text-align: center;
+          line-height: 20px;
+          letter-spacing: 0.2em;
+          transform: rotate(45deg);
+          width: 100px;
+          display: block;
+          position: absolute;
+          top: 19px;
+          right: -21px; }
+        body #okvir #kaktusiDrzac .svi .ribbon span::before {
+          content: "";
+          position: absolute;
+          left: 0px;
+          top: 100%;
+          z-index: -1;
+          border-left: 3px solid #197d26;
+          border-right: 3px solid transparent;
+          border-bottom: 3px solid transparent;
+          border-top: 3px solid #197d26; }
+        body #okvir #kaktusiDrzac .svi .ribbon span::after {
+          content: "";
+          position: absolute;
+          right: 0px;
+          top: 100%;
+          z-index: -1;
+          border-left: 3px solid transparent;
+          border-right: 3px solid #197d26;
+          border-bottom: 3px solid transparent;
+          border-top: 3px solid #197d26; }
+        body #okvir #kaktusiDrzac .svi .slikaDiv img {
+          max-width: 100%; }
+        body #okvir #kaktusiDrzac .svi:hover {
+          box-shadow: 1px 12px 25px #a6a6a6;
+          transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1); }
+    body #okvir #sukulentiDrzac {
+      display: flex;
+      margin: 0px auto;
+      flex-wrap: wrap;
+      width: 90%;
+      justify-content: space-around; }
+      body #okvir #sukulentiDrzac .artikli {
+        flex-basis: 20%;
+        margin: 35px 20px;
+        position: relative;
+        text-align: center;
+        box-shadow: 2px 2px 10px #c2c2c2; }
+        body #okvir #sukulentiDrzac .artikli .ribbon {
+          position: absolute;
+          right: -5px;
+          top: -5px;
+          overflow: hidden;
+          width: 75px;
+          height: 75px;
+          text-align: right; }
+        body #okvir #sukulentiDrzac .artikli .ribbon span {
+          background-color: #197d26;
+          color: #ffffff !important;
+          font-size: 10px;
+          font-weight: bold;
+          text-transform: uppercase;
+          text-align: center;
+          line-height: 20px;
+          letter-spacing: 0.2em;
+          transform: rotate(45deg);
+          width: 100px;
+          display: block;
+          position: absolute;
+          top: 19px;
+          right: -21px; }
+        body #okvir #sukulentiDrzac .artikli .ribbon span::before {
+          content: "";
+          position: absolute;
+          left: 0px;
+          top: 100%;
+          z-index: -1;
+          border-left: 3px solid #197d26;
+          border-right: 3px solid transparent;
+          border-bottom: 3px solid transparent;
+          border-top: 3px solid #197d26; }
+        body #okvir #sukulentiDrzac .artikli .ribbon span::after {
+          content: "";
+          position: absolute;
+          right: 0px;
+          top: 100%;
+          z-index: -1;
+          border-left: 3px solid transparent;
+          border-right: 3px solid #197d26;
+          border-bottom: 3px solid transparent;
+          border-top: 3px solid #197d26; }
+        body #okvir #sukulentiDrzac .artikli .slikaDiv img {
+          max-width: 100%; }
+        body #okvir #sukulentiDrzac .artikli:hover {
+          box-shadow: 1px 12px 25px #a6a6a6;
+          transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1); }
+    body #okvir #treci {
+      width: 100%; }
+      body #okvir #treci #podnaslov {
+        text-align: center;
+        padding: 30px 0px; }
+        body #okvir #treci #podnaslov h2 {
+          padding: 10px;
+          letter-spacing: .25rem; }
+          body #okvir #treci #podnaslov h2::after {
+            content: " ";
+            clear: left;
+            display: block;
+            margin: 20px auto 20px auto;
+            border-bottom: 1px solid #a6a6a6;
+            width: 120px; }
+      body #okvir #treci #galerija #drzac {
+        display: flex;
+        justify-content: center; }
+      body #okvir #treci #galerija #opis p {
+        text-align: center;
+        font-size: 25px;
+        padding-bottom: 30px; }
+      body #okvir #treci #galerija #dugmici {
+        padding: 10px;
+        text-align: center; }
+        body #okvir #treci #galerija #dugmici button {
+          padding: 15px;
+          border: none;
+          background-color: #eee; }
+        body #okvir #treci #galerija #dugmici #next {
+          left: 900px; }
+    body #okvir #cetvrti {
+      width: 100%;
+      margin: 30px 0px; }
+      body #okvir #cetvrti h2:first-child {
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: .25rem;
+        padding: 20px; }
+      body #okvir #cetvrti #sredina {
+        width: 100%;
+        display: flex;
+        justify-content: space-around; }
+        body #okvir #cetvrti #sredina #divAdresa {
+          width: 50%; }
+          body #okvir #cetvrti #sredina #divAdresa p {
+            padding-top: 15px;
+            padding-left: 170px; }
+          body #okvir #cetvrti #sredina #divAdresa h3 {
+            padding: 5px 0px;
+            text-align: center; }
+            body #okvir #cetvrti #sredina #divAdresa h3::after {
+              content: " ";
+              clear: left;
+              display: block;
+              margin: 20px auto 20px auto;
+              border-bottom: 1px solid #a6a6a6;
+              width: 120px; }
+          body #okvir #cetvrti #sredina #divAdresa figure {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            padding-top: 30px; }
+            body #okvir #cetvrti #sredina #divAdresa figure img {
+              max-width: 100%; }
+        body #okvir #cetvrti #sredina #forma {
+          width: 50%; }
+          body #okvir #cetvrti #sredina #forma form {
+            width: 100%; }
+            body #okvir #cetvrti #sredina #forma form h3 {
+              padding: 5px 0px;
+              text-align: center; }
+              body #okvir #cetvrti #sredina #forma form h3::after {
+                content: " ";
+                clear: left;
+                display: block;
+                margin: 20px auto 20px auto;
+                border-bottom: 1px solid #a6a6a6;
+                width: 120px; }
+            body #okvir #cetvrti #sredina #forma form .drzac {
+              width: 80%;
+              margin: 5px auto; }
+              body #okvir #cetvrti #sredina #forma form .drzac label {
+                font-size: 20px; }
+                body #okvir #cetvrti #sredina #forma form .drzac label span {
+                  font-size: 16px; }
+              body #okvir #cetvrti #sredina #forma form .drzac input, body #okvir #cetvrti #sredina #forma form .drzac #ddl, body #okvir #cetvrti #sredina #forma form .drzac #grad {
+                width: 95%;
+                margin-bottom: 5px;
+                padding: 5px;
+                margin-top: 10px;
+                border: 1px solid #000;
+                border-radius: 5px; }
+              body #okvir #cetvrti #sredina #forma form .drzac #radio {
+                display: flex;
+                justify-content: space-around;
+                width: 40%;
+                padding-top: 5px; }
+            body #okvir #cetvrti #sredina #forma form #dugmici {
+              display: flex;
+              flex-wrap: wrap;
+              justify-content: space-around;
+              align-items: center; }
+              body #okvir #cetvrti #sredina #forma form #dugmici .potvrda {
+                padding: 5px;
+                color: #fff;
+                border: none;
+                background-color: #197d26;
+                width: 20%;
+                padding: 5px;
+                margin-right: 7px;
+                margin-top: 10px; }
+                body #okvir #cetvrti #sredina #forma form #dugmici .potvrda:hover {
+                  background-color: #fff;
+                  color: #197d26;
+                  font-weight: bold; }
+    body #okvir #peti {
+      display: flex;
+      justify-content: space-around;
+      padding: 20px;
+      background-color: #222;
+      border-top-left-radius: 9% 70%;
+      border-bottom-left-radius: 9% 70%;
+      margin: 40px 0px 40px 40px; }
+      body #okvir #peti #autorTekst {
+        padding: 50px;
+        color: #fff; }
+        body #okvir #peti #autorTekst p {
+          text-align: justify;
+          padding: 5px; }
+          body #okvir #peti #autorTekst p::after {
+            content: " ";
+            clear: left;
+            display: block;
+            margin: 20px auto 20px auto;
+            border-bottom: 1px solid #a6a6a6;
+            width: 120px;
+            width: 100%; }
+        body #okvir #peti #autorTekst #drustveneMreze {
+          display: flex;
+          flex-direction: row; }
+          body #okvir #peti #autorTekst #drustveneMreze li {
+            list-style-type: none;
+            padding: 10px; }
+            body #okvir #peti #autorTekst #drustveneMreze li a {
+              text-decoration: none;
+              color: #fff;
+              font-size: 1rem; }
+              body #okvir #peti #autorTekst #drustveneMreze li a:hover {
+                color: #197d26; }
+      body #okvir #peti #autorSlika {
+        width: 50%;
+        margin: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+        body #okvir #peti #autorSlika img {
+          max-width: 100%; }
+    body #okvir #futer {
+      background-color: #fff;
+      width: 100%; }
+      body #okvir #futer p {
+        text-align: center; }
+        body #okvir #futer p:after {
+          content: " ";
+          clear: left;
+          display: block;
+          margin: 20px auto 20px auto;
+          border-bottom: 1px solid #a6a6a6;
+          width: 120px;
+          width: 70%; }
+      body #okvir #futer #linkovi {
+        text-align: center; }
+        body #okvir #futer #linkovi a {
+          text-decoration: none;
+          color: #000; }
+          body #okvir #futer #linkovi a:hover {
+            color: #197d26; }
+
+@media screen and (max-width: 992px) {
+  body #okvir {
+    width: 100%;
+    margin: 0px auto; }
+    body #okvir header {
+      width: 100%; }
+    body #okvir #prvi {
+      width: 100%; }
+      body #okvir #prvi h1 {
+        font-size: 20px; }
+    body #okvir #kaktusiDrzac {
+      width: 95%; }
+      body #okvir #kaktusiDrzac .svi {
+        flex-basis: 20%;
+        margin: 20px 15px 0px 15px; }
+    body #okvir #sukulentiDrzac {
+      width: 95%; }
+      body #okvir #sukulentiDrzac .artikli {
+        flex-basis: 20%;
+        margin: 20px 15px; }
+    body #okvir #drugi {
+      width: 100%; }
+      body #okvir #drugi #slikaFix {
+        width: 100%; }
+        body #okvir #drugi #slikaFix p {
+          font-size: 25px;
+          margin-right: 0px;
+          padding: 0px 40px;
+          text-align: center; }
+    body #okvir #cetvrti #sredina #divAdresa p {
+      padding-left: 80px; }
+    body #okvir #peti #autorTekst {
+      padding: 35px; }
+      body #okvir #peti #autorTekst p {
+        font-size: 14px; }
+    body #okvir #peti #autorSlika {
+      width: 70%; } }
+@media screen and (max-width: 768px) {
+  body #okvir {
+    width: 100%;
+    margin: 0px auto; }
+    body #okvir header #meni {
+      margin: 10px 20px; }
+      body #okvir header #meni ul {
+        display: none;
+        text-align: center; }
+        body #okvir header #meni ul li {
+          display: flex;
+          flex-direction: column; }
+        body #okvir header #meni ul #meni1 ul {
+          position: static; }
+          body #okvir header #meni ul #meni1 ul ul {
+            display: none; }
+      body #okvir header #meni #btn {
+        width: 100%;
+        display: block;
+        background: none;
+        border: none;
+        font-size: 30px; }
+        body #okvir header #meni #btn i {
+          color: #000; }
+    body #okvir #prvi h1 {
+      font-size: 1rem; }
+    body #okvir #prvi #ponuda {
+      display: flex;
+      flex-direction: column;
+      margin: 0px auto;
+      width: 100%; }
+      body #okvir #prvi #ponuda .box {
+        margin: 0px;
+        width: 100%; }
+    body #okvir #prvi a .animacija {
+      font-size: 20px; }
+    body #okvir #drugi {
+      display: flex;
+      justify-content: center; }
+      body #okvir #drugi #slikaFix p {
+        font-size: 18px;
+        padding: 0px; }
+    body #okvir #treci {
+      width: 100%; }
+      body #okvir #treci #galerija {
+        width: 100%; }
+        body #okvir #treci #galerija #drzac {
+          width: 100%; }
+          body #okvir #treci #galerija #drzac img {
+            max-width: 100%; }
+    body #okvir #kaktusiDrzac {
+      width: 90%; }
+      body #okvir #kaktusiDrzac .svi {
+        flex-basis: 40%; }
+    body #okvir #sukulentiDrzac {
+      width: 90%; }
+      body #okvir #sukulentiDrzac .artikli {
+        flex-basis: 40%; }
+    body #okvir #cetvrti {
+      margin: 0px; }
+      body #okvir #cetvrti #sredina {
+        display: flex;
+        flex-direction: column; }
+        body #okvir #cetvrti #sredina #divAdresa {
+          margin: 20px auto; }
+          body #okvir #cetvrti #sredina #divAdresa p {
+            padding-left: 30px; }
+        body #okvir #cetvrti #sredina #forma {
+          margin: 0px auto;
+          width: 80%; }
+    body #okvir #peti {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      margin: 30px auto;
+      border-top-left-radius: 0%;
+      border-bottom-left-radius: 0%; }
+      body #okvir #peti #autorSlika {
+        width: 100%; }
+    body #okvir #futer p {
+      font-size: 14px; }
+    body #okvir #futer #linkovi a {
+      font-size: 14px; } }
+@media screen and (max-width: 480px) {
+  body #okvir {
+    width: 100%; }
+    body #okvir #cetvrti #sredina #divAdresa {
+      width: 70%; }
+      body #okvir #cetvrti #sredina #divAdresa p {
+        padding-left: 15px; }
+      body #okvir #cetvrti #sredina #divAdresa figure {
+        width: 100%; }
+    body #okvir #kaktusiDrzac {
+      width: 90%; }
+      body #okvir #kaktusiDrzac .svi {
+        flex-basis: 80%; }
+    body #okvir #sukulentiDrzac {
+      width: 90%; }
+      body #okvir #sukulentiDrzac .artikli {
+        flex-basis: 80%; }
+    body #okvir #futer p {
+      font-size: 12px; }
+    body #okvir #futer #linkovi a {
+      font-size: 12px; } }
+
+/*# sourceMappingURL=style.css.map */
