@@ -1,0 +1,22 @@
+[
+    {
+        "ikonica": "fa fa-shopping-bag",
+        "naziv": "Uvek Tu Za Vas",
+        "opis":"Parfem Shop d.o.o je registrovana firma za internet prodaju parfema"
+    },
+    {
+        "ikonica": "fa fa-check",
+        "naziv": "Original 100%",
+        "opis":"Kod nas mozete kupiti originalne parfeme najpoznatijih svetskih kreatora"
+    },
+    {
+        "ikonica": "fa fa-percent",
+        "naziv": "Najnize Cene",
+        "opis":"Obradujte sebe ili druge parfemom po najpovoljnijim cenama u Srbiji"
+    },
+    {
+        "ikonica": "fa fa-car",
+        "naziv": "Besplatna Dostava",
+        "opis":"Vas omiljen parfem bice kod vas za manje od 24h uz besplatnu dostavu"
+    }
+]

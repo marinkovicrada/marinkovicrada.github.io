@@ -1,0 +1,240 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+@mixin crtica {
+    content: " ";
+    clear: left;
+    display: block;
+    margin: 20px auto 20px auto;
+    border-bottom: 1px solid #333;
+    width: 70px;
+}
+@mixin linija{
+    content: " ";
+    clear: left;
+display: block;
+margin: 20px auto 20px auto;
+border-bottom: 1px solid #a8a8a8;
+width: 120px;
+width: 70%;
+}
+body{
+    font-family: 'Kite One', sans-serif;
+    #main{
+        .crveno{
+            border: 1px solid red !important;
+        }
+        a{
+            color:#333;
+        }
+        .fontTekst{
+            font-size: 14px;
+        }
+        label{
+            border-bottom: 1px solid #000;
+            padding: 0px 5px;
+                #search{
+           border: none;
+            padding-bottom: 9px;
+           
+        }
+        #pretrazi{
+            background:none;
+            border: none !important;
+
+        }
+    }
+        .pozadinaDugme{
+            background-color:#d2a99f;
+        }
+    color:#333;
+    nav{
+        padding: 15px 0px;
+	    transition: all 0.8s;
+        button{
+            border:none;
+            &:focus{
+                outline:none;
+            }
+        }
+        a{
+            color: #d2a99f;
+            font-weight: bold;
+        }
+    }
+    #korpa{
+        padding-top: 100px;
+        table{
+            
+                thead{
+                    background-color: #d2a99f;
+                }
+
+            tr{
+                td{
+                    padding:18px;
+                    border-bottom: 1px solid #d2a99f;
+                    button{
+                        border:none;
+                    }
+                }
+            }
+        }
+    }
+    #autor{
+        padding-top: 100px;
+    }
+    #kontakt{
+        padding-top: 100px;
+        #posalji{
+            padding:10px 15px;
+            background-color: #d2a99f;
+        }
+    }
+    #brendoviOmot{
+        padding-top: 100px;
+    }
+    #omot{
+        padding-top: 100px;
+    }
+    header{
+        position: relative;
+        max-width:100%;
+        height: auto;
+        min-height: 39.1rem;
+        background: linear-gradient(to bottom,rgba(22,22,22,.1) 0,rgba(22,22,22,.3) 100%,#161616 100%),url(../images/background.jpeg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+                h1{
+                    font-size:7rem;
+                    line-height:6rem;
+                    letter-spacing:.8rem;
+                    font-family: Arial, Helvetica, sans-serif;
+                    background:-webkit-linear-gradient(rgba(255,255,255,1),rgba(115,115,115,0.1));
+                    -webkit-text-fill-color:transparent;
+                    -webkit-background-clip:text;
+                }
+                 h2{
+                    max-width:30rem;
+                    font-size:1.5rem;
+                }
+                 .btn{
+                    padding: 1.25rem 2rem;
+                    font-size: 80%;
+                    background-color:#d2a99f;
+                    letter-spacing: .15rem;
+                 }        
+    }
+    .rec{
+     color:#a8a8a8;
+    }
+    h3{
+        &::after{
+            @include crtica();
+
+        }
+    }
+    .ikonica{
+        width: 60px;
+  height: 60px;
+  margin: auto;
+  background: #e8e8e8;
+  border-radius: 50%;
+  color: #000;
+  line-height: 60px;
+  font-size: 25px;
+    }
+    .naziv{
+        text-transform: uppercase;
+    }
+    .opis{
+        color:#333;
+    }
+    footer{
+        .social{
+
+        a{
+            color:#333;
+        }
+        &::after{
+            @include linija();
+        }
+
+    }
+    a{
+        color:#d2a99f;
+    }
+    }
+}
+
+}
+@media screen and (max-width:992px){  
+   body{
+    #main{
+        header{
+            max-width:100%;
+            h1{
+                font-size: 5rem;
+            }
+        }
+        .form-control{
+            font-size: 14px;
+        }
+    }
+}
+}
+@media screen and (max-width:768px){  
+    body{
+     #main{
+        header{
+            h1{
+                font-size: 4rem;
+            }
+            h2{
+                font: 1rem;
+            }
+        }
+        #omot{
+            padding-top: 40px;
+        }
+     }
+ }
+ }
+@media screen and (max-width:576px){  
+    body{
+     #main{
+         width:100%;
+         nav{
+            //  background-color: #fff;
+         }
+         header{
+             h1{
+                font-size: 4rem;
+                background:-webkit-linear-gradient(rgba(249,249,249,0.9),rgba(249,249,249,0.5));
+                -webkit-text-fill-color:transparent;
+                -webkit-background-clip:text; 
+            }
+         }
+         #korpa{
+             table{
+             font-size: 10px;
+         }}
+         footer{
+             max-width: 100%;
+             font-size: 14px;
+         }
+         .slick-next{
+             right:0px;
+         }
+         .slick-prev{
+            left:0px;
+            z-index: 1;
+        }
+
+     }
+ }
+ }

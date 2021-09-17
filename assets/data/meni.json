@@ -1,0 +1,22 @@
+[
+    {
+      "href": "index.html",
+      "tekst": "Naslovna"
+    },
+    {
+      "href": "parfemi.html",
+      "tekst": "Parfemi"
+    },
+    {
+      "href": "brendovi.html",
+      "tekst": "Brendovi"
+    },
+    {
+      "href": "kontakt.html",
+      "tekst": "Kontakt"
+    },
+    {
+      "href": "korpa.html",
+      "tekst": "Korpa<i class='fa fa-shopping-cart' aria-hidden='true'></i>"
+    }
+  ]

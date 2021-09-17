@@ -1,0 +1,57 @@
+[
+    {
+        "id":1,
+        "naziv":"Armani",
+        "slika":"assets/images/ga.png"
+    },
+    {
+        "id":2,
+        "naziv":"Burberry",
+        "slika":"assets/images/b.jpg"
+    },
+    {
+        "id":3,
+        "naziv":"Bvlgari",
+        "slika":"assets/images/b.png"
+    },
+    {
+        "id":4,
+        "naziv":"Hugo Boss",
+        "slika":"assets/images/hb.jpg"
+    },
+    {
+        "id":5,
+        "naziv":"Dolce&Gabbana",
+        "slika":"assets/images/dg.jpg"
+    },
+    {
+        "id":6,
+        "naziv":"Dior",
+        "slika":"assets/images/cd.jpg"
+    },
+    {
+        "id":7,
+        "naziv":"Carolina Herrera",
+        "slika":"assets/images/ch.png"
+    },
+    {
+        "id":8,
+        "naziv":"Paco Rabanne",
+        "slika":"assets/images/pr.jpg"
+    },
+    {
+        "id":9,
+        "naziv":"Gucci",
+        "slika":"assets/images/g.jpg"
+    },
+    {
+        "id":10,
+        "naziv":"Jean Paul Gaultier",
+        "slika":"assets/images/jpg.jpg"
+    },
+    {
+        "id":11,
+        "naziv":"Versace",
+        "slika":"assets/images/v.png"
+    }
+]

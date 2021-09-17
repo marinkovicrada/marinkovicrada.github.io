@@ -1,0 +1,301 @@
+[
+    {
+        "id":1,
+        "slika":{
+            "putanja":"assets/images/1.jpg",
+            "alt":"Gucci"
+        },
+        "brend":{
+            "id":9,
+            "naziv":"Gucci"
+        },
+        "naziv":"Gucci Pour Homme Edt 90ml",
+        "cene": {
+            "cena":7900,   
+            "snizenje":true,
+            "procenat": 15
+        },
+        "najnoviji":false,
+        "kategorija":{
+            "id":1,
+            "naziv":"Muski parfemi"
+        },
+        "datum": "2018-03-14"
+    },
+    {
+        "id":2,
+        "slika":{
+            "putanja":"assets/images/2.jpg",
+            "alt":"Dior"
+        },
+        "brend":{
+            "id":6,
+            "naziv":"Dior"
+        },
+        "naziv":"Miss Dior woman edp 100ml",
+        "cene": {
+            "cena":9790,   
+            "snizenje":true,
+            "procenat": 10
+        },
+        "najnoviji":false,
+        "kategorija":{
+            "id":2,
+            "naziv":"Zenski parfemi"
+        },
+        "datum": "2019-03-14"
+    },
+    {
+        "id":3,
+        "slika":{
+            "putanja":"assets/images/3.jpg",
+            "alt":"Versace"
+        },
+        "brend":{
+            "id":11,
+            "naziv":"Versace"
+        },
+        "naziv":"Eros man edt 30ml",
+        "cene": {
+            "cena":11300,   
+            "snizenje":true,
+            "procenat": 15
+        },
+        "najnoviji":false,
+        "kategorija":{
+            "id":1,
+            "naziv":"Muski parfemi"
+        },
+        "datum": "2019-12-23"
+    },
+    {
+        "id":4,
+        "slika":{
+            "putanja":"assets/images/4.jpg",
+            "alt":"Hugo Boss"
+        },
+        "brend":{
+            "id":4,
+            "naziv":"Hugo Boss"
+        },
+        "naziv":"Boss Nuit woman edp 75ml",
+        "cene": {
+            "cena":11900,   
+            "snizenje":false,
+            "procenat": ""
+        },
+        "najnoviji":true,
+        "kategorija":{
+            "id":2,
+            "naziv":"Zenski parfemi"
+        },
+        "datum": "2012-03-14"
+    },
+    {
+        "id":5,
+        "slika":{
+            "putanja":"assets/images/14.jpg",
+            "alt":"Burberry"
+        },
+        "brend":{
+            "id":2,
+            "naziv":"Burberry"
+        },
+        "naziv":"Her edt 100ml",
+        "cene": {
+            "cena":9300,   
+            "snizenje":false,
+            "procenat": ""
+        },
+        "najnoviji":true,
+        "kategorija":{
+            "id":2,
+            "naziv":"Zenski parfemi"
+        },
+        "datum": "2014-06-01"
+    },
+    {
+        "id":6,
+        "slika":{
+            "putanja":"assets/images/6.jpg",
+            "alt":"Versace"
+        },
+        "brend":{
+            "id":11,
+            "naziv":"Versace"
+        },
+        "naziv":"Yellow Diamond woman edt 50ml",
+        "cene": {
+            "cena":10500,   
+            "snizenje":false,
+            "procenat": ""
+        },
+        "najnoviji":false,
+        "kategorija":{
+            "id":2,
+            "naziv":"Zenski parfemi"
+        },
+        "datum": "2018-11-16"
+    },
+    {
+        "id":7,
+        "slika":{
+            "putanja":"assets/images/7.jpg",
+            "alt":"Burberry"
+        },
+        "brend":{
+            "id":2,
+            "naziv":"Burberry"
+        },
+        "naziv":"Mr Burberry man edp 100ml",
+        "cene": {
+            "cena":10900,   
+            "snizenje":true,
+            "procenat": 15
+        },
+        "najnoviji":false,
+        "kategorija":{
+            "id":1,
+            "naziv":"Muski parfemi"
+        },
+        "datum": "2000-01-10"
+    },
+    {
+        "id":8,
+        "slika":{
+            "putanja":"assets/images/16.jpg",
+            "alt":"Paco Rabanne"
+        },
+        "brend":{
+            "id":8,
+            "naziv":"Paco Rabanne"
+        },
+        "naziv":"Invictus man edt 50ml",
+        "cene": {
+            "cena":8100,   
+            "snizenje":false,
+            "procenat": ""
+        },
+        "najnoviji":true,
+        "kategorija":{
+            "id":1,
+            "naziv":"Muski parfemi"
+        },
+        "datum": "2019-05-04"
+    },
+    {
+        "id":9,
+        "slika":{
+            "putanja":"assets/images/15.jpg",
+            "alt":"Dolce&Gabbana"
+        },
+        "brend":{
+            "id":5,
+            "naziv":"Dolce&Gabbana"
+        },
+        "naziv":"The only one female edp 30ml",
+        "cene": {
+            "cena":8490,   
+            "snizenje":false,
+            "procenat": ""
+        },
+        "najnoviji":true,
+        "kategorija":{
+            "id":2,
+            "naziv":"Zenski parfemi"
+        },
+        "datum": "2013-08-24"
+    },
+    {
+        "id":10,
+        "slika":{
+            "putanja":"assets/images/13.jpg",
+            "alt":"Bvlgari"
+        },
+        "brend":{
+            "id":3,
+            "naziv":"Bvlgari"
+        },
+        "naziv":"Omnia Paraiba woman edt 25ml",
+        "cene": {
+            "cena":5240,   
+            "snizenje":true,
+            "procenat": 10
+        },
+        "najnoviji":false,
+        "kategorija":{
+            "id":2,
+            "naziv":"Zenski parfemi"
+        },
+        "datum": "2020-03-14"
+    },
+    {
+        "id":11,
+        "slika":{
+            "putanja":"assets/images/20.jpg",
+            "alt":"Armani"
+        },
+        "brend":{
+            "id":1,
+            "naziv":"Armani"
+        },
+        "naziv":"Si Intense woman edp 50ml",
+        "cene": {
+            "cena":11890,   
+            "snizenje":false,
+            "procenat": ""
+        },
+        "najnoviji":true,
+        "kategorija":{
+            "id":2,
+            "naziv":"Zenski parfemi"
+        },
+        "datum": "2020-09-05"
+    },
+    {
+        "id":12,
+        "slika":{
+            "putanja":"assets/images/22.jpg",
+            "alt":"Jean Paul Gaultier"
+        },
+        "brend":{
+            "id":10,
+           "naziv" : "Jean Paul Gaultier"
+        },
+        "naziv":"Le Beau male edt 75ml",
+        "cene": {
+            "cena":7590,   
+            "snizenje":false,
+            "procenat": ""
+        },
+        "najnoviji":true,
+        "kategorija":{
+            "id":1,
+            "naziv":"Muski parfemi"
+        },
+        "datum": "2018-01-05"
+    },
+    {
+        "id":13,
+        "slika":{
+            "putanja":"assets/images/21.jpg",
+            "alt":"Carolina Herrera"
+        },
+        "brend":{
+            "id":7,
+            "naziv":"Carolina Herrera"
+        },
+        "naziv":"212 Vip Black man edp 100ml",
+        "cene": {
+            "cena":11290,   
+            "snizenje":true,
+            "procenat": 30
+        },
+        "najnoviji":false,
+        "kategorija":{
+            "id":1,
+            "naziv":"Muski parfemi"
+        },
+        "datum": "2020-01-01"
+    }
+]
